@@ -339,46 +339,70 @@
 																	<!-- Nav tabs -->
 																	<ul class="nav nav-tabs" id="myTab" role="tablist">
 																		<li class="nav-item">
-																			<a class="nav-link" id="sidebars-tab" data-toggle="tab" href="#sidebars" role="tab" aria-controls="sidebars" aria-selected="false">Sidebar</a>
+																			<a class="nav-link" id="categorymenu-tab" data-toggle="tab" href="#categorymenu" role="tab" aria-controls="categorymenu" aria-selected="false">Category as Menu</a>
 																		</li>
 																		<li class="nav-item">
-																			<a class="nav-link" id="homepage-tab" data-toggle="tab" href="#homepage" role="tab" aria-controls="homepage" aria-selected="false">Home Page Mete</a>
+																			<a class="nav-link" id="pagemenu-tab" data-toggle="tab" href="#pagemenu" role="tab" aria-controls="pagemenu" aria-selected="false">Page as Menu</a>
+																		</li>
+																		<li class="nav-item">
+																			<a class="nav-link" id="othermenu-tab" data-toggle="tab" href="#othermenu" role="tab" aria-controls="othermenu" aria-selected="false">Other Menu</a>
 																		</li>
 																	</ul>
 																	
 																	<!-- Tab panes -->
 																	<div class="tab-content">
-																		<div class="tab-pane" id="sidebars" role="tabpanel" aria-labelledby="sidebars">
+																		<div class="tab-pane" id="categorymenu" role="tabpanel" aria-labelledby="categorymenu-tab">
 																			<!-- Row start -->
 																			<div class="row justify-content-center gutters">
 																				<div class="col-xl-7 col-lg-7 col-md-9 col-sm-10">
 																					<form>
 																						<div class="card m-0">
 																							<div class="card-header">
-																								<div class="card-title">Email Settings</div>
+																								<div class="card-title">Category as Menu</div>
 																								<div class="card-sub-title">How can we help you? A placeholder for small description.</div>
 																							</div>
 																							<div class="card-body">
-
-																								<div class="form-group">
-																									<label for="inputMessage" class="col-form-label">How many recent news? *</label>
-																									<input type="text" class="form-control" id="inputName" placeholder="">
-																									<small id="passwordHelpBlock" class="form-text text-muted">
-																										If you do not want to show recent news, put value to 0.
-																									</small>
+								
+																								<div class="form-group row gutters">
+																									<label for="inputEmail" class="col-sm-3 col-form-label text-right">Select Category *</label>
+																									<div class="col-lg-8 col-sm-4">
+																										<div class="form-group">
+																											<select class="form-control form-control-lg">
+																												<option>A</option>
+																												<option>B</option>
+																												<option>C</option>
+																												<option>D</option>
+																												<option>E</option>
+																											</select>
+																										</div>
+																									</div>
 																								</div>
 
-																								<div class="form-group">
-																									<label for="inputMessage" class="col-form-label">How many popular news? *</label>
-																									<input type="text" class="form-control" id="inputName" placeholder="">
-																									<small id="passwordHelpBlock" class="form-text text-muted">
-																										If you do not want to show popular news, put value to 0.
-																									</small>
+																								<div class="form-group row gutters">
+																									<label for="inputName" class="col-sm-3 col-form-label text-right">Order *</label>
+																									<div class="col-lg-8 col-sm-4">
+																										<input type="text" class="form-control" id="inputName" placeholder="">
+																									</div>
 																								</div>
 
+																								<div class="form-group row gutters">
+																									<label for="inputEmail" class="col-sm-3 col-form-label text-right">Parent *</label>
+																									<div class="col-lg-8 col-sm-4">
+																										<div class="form-group">
+																											<select class="form-control form-control-lg">
+																												<option>A</option>
+																												<option>B</option>
+																												<option>C</option>
+																												<option>D</option>
+																												<option>E</option>
+																											</select>
+																										</div>
+																									</div>
+																								</div>
+								
 																								<button type="button" id="submit" name="submit" class="btn btn-primary float-right">Submit
 																									Form</button>
-
+								
 																							</div>
 																						</div>
 																					</form>
@@ -386,38 +410,116 @@
 																			</div>
 																			<!-- Row end -->
 																		</div>
-																		<div class="tab-pane" id="homepage" role="tabpanel" aria-labelledby="homepage-tab">
+																		<div class="tab-pane" id="pagemenu" role="tabpanel" aria-labelledby="pagemenu-tab">
 																			<!-- Row start -->
 																			<div class="row justify-content-center gutters">
 																				<div class="col-xl-7 col-lg-7 col-md-9 col-sm-10">
 																					<form>
 																						<div class="card m-0">
 																							<div class="card-header">
-																								<div class="card-title">Home Page Meta</div>
+																								<div class="card-title">Page as Menu</div>
 																								<div class="card-sub-title">How can we help you? A placeholder for small description.</div>
 																							</div>
 																							<div class="card-body">
-
-																								<div class="form-group">
-																									<label for="inputMessage" class="col-form-label">Meta Title</label>
-																									<input type="text" class="form-control" id="inputName" placeholder="">
+								
+																								<div class="form-group row gutters">
+																									<label for="inputEmail" class="col-sm-3 col-form-label text-right">Select Page *</label>
+																									<div class="col-lg-8 col-sm-4">
+																										<div class="form-group">
+																											<select class="form-control form-control-lg">
+																												<option>A</option>
+																												<option>B</option>
+																												<option>C</option>
+																												<option>D</option>
+																												<option>E</option>
+																											</select>
+																										</div>
+																									</div>
 																								</div>
 
-																								<div class="form-group">
-																									<label for="inputMessage" class="col-form-label">Meta Keyword</label>
-																									<textarea class="form-control" id="message" placeholder="Google Maps" maxlength="140"
-																										rows="4"></textarea>
+																								<div class="form-group row gutters">
+																									<label for="inputName" class="col-sm-3 col-form-label text-right">Order *</label>
+																									<div class="col-lg-8 col-sm-4">
+																										<input type="text" class="form-control" id="inputName" placeholder="">
+																									</div>
 																								</div>
 
-																								<div class="form-group">
-																									<label for="inputMessage" class="col-form-label">Meta Description</label>
-																									<textarea class="form-control" id="message" placeholder="Google Maps" maxlength="140"
-																										rows="4"></textarea>
+																								<div class="form-group row gutters">
+																									<label for="inputEmail" class="col-sm-3 col-form-label text-right">Parent *</label>
+																									<div class="col-lg-8 col-sm-4">
+																										<div class="form-group">
+																											<select class="form-control form-control-lg">
+																												<option>A</option>
+																												<option>B</option>
+																												<option>C</option>
+																												<option>D</option>
+																												<option>E</option>
+																											</select>
+																										</div>
+																									</div>
 																								</div>
-
+								
 																								<button type="button" id="submit" name="submit" class="btn btn-primary float-right">Submit
 																									Form</button>
+								
+																							</div>
+																						</div>
+																					</form>
+																				</div>
+																			</div>
+																			<!-- Row end -->
+																		</div>
+																		<div class="tab-pane" id="othermenu" role="tabpanel" aria-labelledby="othermenu-tab">
+																			<!-- Row start -->
+																			<div class="row justify-content-center gutters">
+																				<div class="col-xl-7 col-lg-7 col-md-9 col-sm-10">
+																					<form>
+																						<div class="card m-0">
+																							<div class="card-header">
+																								<div class="card-title">Other Menu</div>
+																								<div class="card-sub-title">How can we help you? A placeholder for small description.</div>
+																							</div>
+																							<div class="card-body">
+								
+																								<div class="form-group row gutters">
+																									<label for="inputName" class="col-sm-3 col-form-label text-right">Menu Name *</label>
+																									<div class="col-lg-8 col-sm-4">
+																										<input type="text" class="form-control" id="inputName" placeholder="">
+																									</div>
+																								</div>
 
+																								<div class="form-group row gutters">
+																									<label for="inputName" class="col-sm-3 col-form-label text-right">Order *</label>
+																									<div class="col-lg-8 col-sm-4">
+																										<input type="text" class="form-control" id="inputName" placeholder="">
+																									</div>
+																								</div>
+
+																								<div class="form-group row gutters">
+																									<label for="inputName" class="col-sm-3 col-form-label text-right">URL *</label>
+																									<div class="col-lg-8 col-sm-4">
+																										<input type="text" class="form-control" id="inputName" placeholder="">
+																									</div>
+																								</div>
+
+																								<div class="form-group row gutters">
+																									<label for="inputEmail" class="col-sm-3 col-form-label text-right">Parent *</label>
+																									<div class="col-lg-8 col-sm-4">
+																										<div class="form-group">
+																											<select class="form-control form-control-lg">
+																												<option>A</option>
+																												<option>B</option>
+																												<option>C</option>
+																												<option>D</option>
+																												<option>E</option>
+																											</select>
+																										</div>
+																									</div>
+																								</div>
+								
+																								<button type="button" id="submit" name="submit" class="btn btn-primary float-right">Submit
+																									Form</button>
+								
 																							</div>
 																						</div>
 																					</form>
@@ -431,10 +533,6 @@
 														</div>
 													</div>
 													<!-- Row end -->
-												</div>
-												<div class="modal-footer">
-													<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-													<button type="button" class="btn btn-primary">Save</button>
 												</div>
 											</div>
 										</div>
